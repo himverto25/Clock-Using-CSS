@@ -1,0 +1,46 @@
+#clock-container {
+	position: relative;
+	margin: auto;
+	height: 40vw;
+	/*to make the height and width responsive*/
+	width: 40vw;
+	background: url(clock.webp) no-repeat;
+	/*setting our background image*/
+	background-size: 100%;
+    border-radius: 50px;
+}
+
+#hour,
+#minute,
+#second{
+	position: absolute;
+	/* background: black; */
+	border-radius: 10px;
+	transform-origin: bottom;
+}
+#hour{
+	width: 1.8%;
+	height: 22%;
+	top: 27%;
+	left: 48.85%;
+	opacity: 0.8;
+    background-color: black;
+}
+
+#minute{
+	width: 1.7%;
+	height: 26%;
+	top: 23%;
+	left: 48.9%;
+	opacity: 0.8;
+    background-color: black;
+}
+
+#second{
+	width: 1%;
+	height: 31%;
+	top: 18%;
+	left: 49.25%;
+	opacity: 0.8;
+    background-color: black;
+}
