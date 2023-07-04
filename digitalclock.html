@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body{
+            background-color: rgb(195, 220, 211);
+        }
+        p
+        {
+            text-align: center;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .clock
+        {   
+            border: 8px solid white;
+            outline: solid 10px black;
+            outline-offset: 4px;
+            border-radius: 10px;
+            margin: 20px 350px;;   
+            padding: 80px 150px; 
+            background-color: rgb(167, 164, 164);
+        }
+        #clocktime
+        {   
+            color:red;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            margin: auto 16%;
+            font-family: monospace;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a digital clock</p>
+<div class="clock">
+        <span id="clocktime"></span>
+</div>
+<script>
+    // anonymous function called automatically;
+    (function()
+    {
+        setInterval(()=>
+        {
+            var d = new Date().toLocaleTimeString();
+            document.getElementById("clocktime").innerHTML=d;
+        },1000);
+    })();
+</script>
+  
+</body>
+</html>
